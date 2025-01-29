@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: slategray;
+    color: whitesmoke;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+header img {
+    max-width: 200px;
+    border: 8px solid mintcream;
+    border-radius: 16px;
+}
+
+.verse,
+.chorus,
+.outro {
+    margin: 10px auto;
+    padding: 20px 40px;
+    max-width: 600px;
+}
+
+.chorus {
+    background-color: mintcream;
+    border-radius: 16px;
+}
+
+i {
+    color: slategray;
+}
+
+.about {
+    background-color: mintcream;
+    color: slategray;
+    text-align: center;
+    padding: 20px 40px;
+}
