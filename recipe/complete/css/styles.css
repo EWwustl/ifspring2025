@@ -1,0 +1,176 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e0e9d8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #536211;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-weight: bold;
+    background-color: #536211;
+    color: #e0e9d8;
+}
+
+.hamburger-menu {
+    display: block;
+    font-size: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: none;
+}
+
+.content {
+    width: 960px;
+    max-width: 90%;
+    margin: auto;
+    background-color: #e0e9d8;
+}
+
+section {
+    display: block;
+    margin: 2em 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.text-container p {
+    max-width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 14px;
+}
+
+section h2 {
+    font-size: 18px;
+    border-left: 0.2em solid;
+    padding-left: 0.5em
+}
+
+section li {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #536211;
+    color: #e0e9d8;
+}
+
+header p,
+footer p {
+    font-size: 12px;
+    margin: 0;
+    padding: 1em 0;
+}
+
+footer a {
+    color: #e0e9d8;
+}
+
+@media (min-width:480px) {
+    html {
+        background-color: #badca9;
+    }
+
+    hr,
+    .hamburger-menu {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #e0e9d8;
+    }
+
+    header nav ul li a:hover {
+        color: #badca9;
+    }
+
+    .content {
+        margin: 2rem auto;
+        border: 0.5rem solid;
+        border-radius: 1rem;
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-size: 42px;
+        text-align: left;
+    }
+
+    .text-container p,
+    .recipe-info,
+    section li,
+    header p,
+    footer p {
+        font-size: 16px;
+    }
+
+    section#intro {
+        display: flex;
+        align-items: center;
+    }
+
+    section img {
+        width: 36%;
+        flex-shrink: 0;
+        margin-right: 2rem;
+    }
+
+    .text-container p {
+        text-align: left;
+    }
+
+    .recipe-info {
+        justify-content: left;
+    }
+
+    .ingredients-tools-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .ingredients-tools-container section {
+        width: 50%;
+    }
+}
