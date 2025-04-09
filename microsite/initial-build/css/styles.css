@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #150A0B;
+    color: #fff;
+}
+
+header {
+    padding: 8px 0;
+    text-align: center;
+    background-color: #800020;
+    color: #F1E3A4;
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 48px;
+    z-index: 1000;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 24px
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+footer {
+    padding: 4px 0;
+    text-align: center;
+    width: 100vw;
+    height: 16px;
+    background-color: #800020;
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.side-nav {
+    width: 200px;
+    height: 100vh;
+    padding-top: 4rem;
+    background-color: #150A0B;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.side-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.5s, border-bottom 0.5s;
+}
+
+.side-nav .active a {
+    color: #CE1141;
+    border-bottom: 2px solid #CE1141;
+}
+
+.side-nav a:hover {
+    color: #CE1141;
+}
+
+.content {
+    margin: 64px 48px 24px 200px;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+#mj-home {
+    height: 85vh;
+}
+
+.bio-info {
+    margin-top: 6rem;
+}
+
+.bio-info p {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    font-size: 16px;
+}
+
+.bio-info strong {
+    width: 120px;
+    font-weight: bold;
+}
+
+.bio-info span {
+    flex: 1;
+}
+
+.bio-paragraph {
+    margin-top: 6rem;
+    font-size: 16px;
+}
+
+.highlight-name {
+    color: #CE1141;
+    font-weight: bold;
+}
+
+a {
+    margin: 0.5rem 0 0.5rem 1rem;
+    color: #F1E3A4;
+    display: block;
+}
+
+img {
+    max-width: 50%;
+    position: sticky;
+    top: 64px
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.gallery-elem {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.gallery-elem img {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.gallery-elem p {
+    font-size: 14px;
+}
