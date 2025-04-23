@@ -1,0 +1,301 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #150A0B;
+    color: #fff;
+}
+
+header {
+    padding: 8px 0;
+    text-align: center;
+    background-color: #800020;
+    color: #F1E3A4;
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 48px;
+    z-index: 1000;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 24px
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+header a {
+    margin: 0;
+    text-decoration: none;
+    display: inline;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: #F1E3A4;
+    padding: 1rem;
+}
+
+/* Header text container to help with layout */
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer {
+    padding: 4px 0;
+    text-align: center;
+    width: 100vw;
+    height: 16px;
+    background-color: #800020;
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+footer #footer-small {
+    display: none;
+}
+
+footer #footer-full {
+    display: block;
+}
+
+.side-nav {
+    width: 200px;
+    height: 100vh;
+    padding-top: 4rem;
+    background-color: #150A0B;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    z-index: 800;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.side-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.5s, border-bottom 0.5s;
+}
+
+.side-nav .active a {
+    color: #CE1141;
+    border-bottom: 2px solid #CE1141;
+}
+
+.side-nav a:hover {
+    color: #CE1141;
+}
+
+.content {
+    margin: 64px 48px 24px 200px;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.bio-info {
+    margin-top: 3rem;
+}
+
+.bio-info p {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    font-size: 16px;
+}
+
+.bio-info strong {
+    width: 120px;
+    font-weight: bold;
+}
+
+.bio-info span {
+    flex: 1;
+}
+
+.bio-paragraph {
+    margin-top: 3rem;
+    font-size: 16px;
+}
+
+.highlight-name {
+    color: #CE1141;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 2.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #800020;
+    color: #F1E3A4;
+    border-bottom: 2px solid #CE1141;
+}
+
+a {
+    margin: 0.5rem 0 0.5rem 1rem;
+    color: #F1E3A4;
+    display: block;
+}
+
+img {
+    max-width: 50%;
+    max-height: calc(100vh - 88px);
+    position: sticky;
+    top: 64px
+}
+
+.text-box {
+    margin-bottom: 1rem;
+}
+
+.timeline {
+    padding: 0;
+}
+
+.timeline li {
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.gallery-elem {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.gallery-elem img {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery-elem p {
+    font-size: 14px;
+}
+
+@media (max-width: 840px) {
+    .side-nav {
+        width: 180px;
+    }
+
+    .side-nav a {
+        font-size: 18px;
+    }
+
+    .content {
+        margin: 64px 36px 24px 180px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    img {
+        max-width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width:480px) {
+    header {
+        padding: 4px 0;
+        height: 40px;
+    }
+
+    .hamburger {
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 12px;
+    }
+
+    header h1,
+    header h2 {
+        letter-spacing: 2px;
+        line-height: 18px
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header h2 {
+        font-size: 15px;
+    }
+
+    .side-nav {
+        left: -220px;
+        transition: left 0.5s ease;
+    }
+
+    .side-nav.open {
+        left: 0;
+    }
+
+    .content {
+        margin: 24px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    img {
+        max-width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    footer #footer-full {
+        display: none;
+    }
+
+    footer #footer-small {
+        display: block;
+    }
+}
